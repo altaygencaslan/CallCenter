@@ -1,0 +1,14 @@
+P:\Projects\CallCenter\CallCenter.Business.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+P:\Projects\CallCenter\CallCenter.Business.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+P:\Projects\CallCenter\CallCenter.Business.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+P:\Projects\CallCenter\CallCenter.Business.Tests\bin\Debug\CallCenter.Business.Tests.dll
+P:\Projects\CallCenter\CallCenter.Business.Tests\bin\Debug\CallCenter.Business.Tests.pdb
+P:\Projects\CallCenter\CallCenter.Business.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+P:\Projects\CallCenter\CallCenter.Business.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+P:\Projects\CallCenter\CallCenter.Business.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+P:\Projects\CallCenter\CallCenter.Business.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+P:\Projects\CallCenter\CallCenter.Business.Tests\obj\Debug\CallCenter.Business.Tests.csprojAssemblyReference.cache
+P:\Projects\CallCenter\CallCenter.Business.Tests\obj\Debug\CallCenter.Business.Tests.csproj.CoreCompileInputs.cache
+P:\Projects\CallCenter\CallCenter.Business.Tests\obj\Debug\CallCenter.Business.Tests.csproj.CopyComplete
+P:\Projects\CallCenter\CallCenter.Business.Tests\obj\Debug\CallCenter.Business.Tests.dll
+P:\Projects\CallCenter\CallCenter.Business.Tests\obj\Debug\CallCenter.Business.Tests.pdb

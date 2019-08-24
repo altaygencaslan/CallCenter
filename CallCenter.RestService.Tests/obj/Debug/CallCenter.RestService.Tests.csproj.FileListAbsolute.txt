@@ -1,0 +1,13 @@
+P:\Projects\CallCenter\CallCenter.RestService.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+P:\Projects\CallCenter\CallCenter.RestService.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+P:\Projects\CallCenter\CallCenter.RestService.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+P:\Projects\CallCenter\CallCenter.RestService.Tests\bin\Debug\CallCenter.RestService.Tests.dll
+P:\Projects\CallCenter\CallCenter.RestService.Tests\bin\Debug\CallCenter.RestService.Tests.pdb
+P:\Projects\CallCenter\CallCenter.RestService.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+P:\Projects\CallCenter\CallCenter.RestService.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+P:\Projects\CallCenter\CallCenter.RestService.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+P:\Projects\CallCenter\CallCenter.RestService.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+P:\Projects\CallCenter\CallCenter.RestService.Tests\obj\Debug\CallCenter.RestService.Tests.csproj.CoreCompileInputs.cache
+P:\Projects\CallCenter\CallCenter.RestService.Tests\obj\Debug\CallCenter.RestService.Tests.csproj.CopyComplete
+P:\Projects\CallCenter\CallCenter.RestService.Tests\obj\Debug\CallCenter.RestService.Tests.dll
+P:\Projects\CallCenter\CallCenter.RestService.Tests\obj\Debug\CallCenter.RestService.Tests.pdb

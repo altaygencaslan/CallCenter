@@ -1,0 +1,6 @@
+P:\Projects\CallCenter\CallCenter.Data\bin\Debug\CallCenter.Data.dll
+P:\Projects\CallCenter\CallCenter.Data\bin\Debug\CallCenter.Data.pdb
+P:\Projects\CallCenter\CallCenter.Data\obj\Debug\CallCenter.Data.csprojAssemblyReference.cache
+P:\Projects\CallCenter\CallCenter.Data\obj\Debug\CallCenter.Data.csproj.CoreCompileInputs.cache
+P:\Projects\CallCenter\CallCenter.Data\obj\Debug\CallCenter.Data.dll
+P:\Projects\CallCenter\CallCenter.Data\obj\Debug\CallCenter.Data.pdb
