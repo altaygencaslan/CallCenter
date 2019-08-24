@@ -4,3 +4,14 @@ P:\Projects\CallCenter\CallCenter.Business\obj\Debug\CallCenter.Business.csprojA
 P:\Projects\CallCenter\CallCenter.Business\obj\Debug\CallCenter.Business.csproj.CoreCompileInputs.cache
 P:\Projects\CallCenter\CallCenter.Business\obj\Debug\CallCenter.Business.dll
 P:\Projects\CallCenter\CallCenter.Business\obj\Debug\CallCenter.Business.pdb
+P:\Projects\CallCenter\CallCenter.Business\bin\Debug\CallCenter.Business.dll.config
+P:\Projects\CallCenter\CallCenter.Business\bin\Debug\EntityFramework.dll
+P:\Projects\CallCenter\CallCenter.Business\bin\Debug\EntityFramework.SqlServer.dll
+P:\Projects\CallCenter\CallCenter.Business\bin\Debug\EntityFramework.xml
+P:\Projects\CallCenter\CallCenter.Business\bin\Debug\EntityFramework.SqlServer.xml
+P:\Projects\CallCenter\CallCenter.Business\obj\Debug\CallCenter.Business.csproj.CopyComplete
+P:\Projects\CallCenter\CallCenter.Business\bin\Debug\CallCenter.Data.dll
+P:\Projects\CallCenter\CallCenter.Business\bin\Debug\CallCenter.Data.pdb
+P:\Projects\CallCenter\CallCenter.Business\obj\Debug\CallCenter.Business.Migrations.mig1.resources
+P:\Projects\CallCenter\CallCenter.Business\obj\Debug\CallCenter.Business.csproj.GenerateResource.cache
+P:\Projects\CallCenter\CallCenter.Business\obj\Debug\CallCenter.Business.Migrations.mig2.resources

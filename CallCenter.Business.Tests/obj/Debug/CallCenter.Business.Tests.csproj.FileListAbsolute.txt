@@ -12,3 +12,6 @@ P:\Projects\CallCenter\CallCenter.Business.Tests\obj\Debug\CallCenter.Business.T
 P:\Projects\CallCenter\CallCenter.Business.Tests\obj\Debug\CallCenter.Business.Tests.csproj.CopyComplete
 P:\Projects\CallCenter\CallCenter.Business.Tests\obj\Debug\CallCenter.Business.Tests.dll
 P:\Projects\CallCenter\CallCenter.Business.Tests\obj\Debug\CallCenter.Business.Tests.pdb
+P:\Projects\CallCenter\CallCenter.Business.Tests\bin\Debug\CallCenter.Business.dll
+P:\Projects\CallCenter\CallCenter.Business.Tests\bin\Debug\CallCenter.Business.pdb
+P:\Projects\CallCenter\CallCenter.Business.Tests\bin\Debug\CallCenter.Business.dll.config
