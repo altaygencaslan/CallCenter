@@ -4,3 +4,6 @@ P:\Projects\CallCenter\CallCenter.Data\obj\Debug\CallCenter.Data.csprojAssemblyR
 P:\Projects\CallCenter\CallCenter.Data\obj\Debug\CallCenter.Data.csproj.CoreCompileInputs.cache
 P:\Projects\CallCenter\CallCenter.Data\obj\Debug\CallCenter.Data.dll
 P:\Projects\CallCenter\CallCenter.Data\obj\Debug\CallCenter.Data.pdb
+P:\Projects\CallCenter\CallCenter.Data\bin\Debug\CallCenter.Helper.dll
+P:\Projects\CallCenter\CallCenter.Data\bin\Debug\CallCenter.Helper.pdb
+P:\Projects\CallCenter\CallCenter.Data\obj\Debug\CallCenter.Data.csproj.CopyComplete

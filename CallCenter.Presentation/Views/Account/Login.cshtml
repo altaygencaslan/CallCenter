@@ -1,0 +1,44 @@
+﻿@model  CallCenter.Presentation.Models.Login.LoginModel
+@{
+    Layout = "";
+    ViewBag.Title = "Login";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title | CALL CENTER</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+</head>
+<body>
+    <div class="d-flex justify-content-center">
+        <div class="card col-md-2">
+            <div class="card-body">
+                <h2 class="card-title">Login</h2>
+                <form asp-controller="Account" asp-action="Login" method="post">
+                    @Html.ValidationSummary()
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="User Name" id="UserName" name="UserName">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Password" id="Password" name="Password">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" class="form-control btn btn-success" aria-label="Sign In" aria-describedby="basic-addon1">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.bootstrap.min.js"></script>
+</body>
+</html>

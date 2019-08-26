@@ -1,0 +1,88 @@
+﻿@model CallCenter.Business.DTO.TicketDto
+@{
+    ViewBag.Title = "Detail";
+}
+
+<h2>Detail</h2>
+<table class="table table-bordered">
+    <tbody>
+        <tr>
+            <td>
+                TicketOwnerFullName
+            </td>
+            <td>
+                @Model.TicketOwnerFullName
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Description
+            </td>
+            <td>
+                @Model.Description
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Bonus
+            </td>
+            <td>
+                @Model.Bonus
+            </td>
+        </tr>
+        <tr>
+            <td>
+                CreateDate
+            </td>
+            <td>
+                @Model.CreateDate
+            </td>
+        </tr>
+        <tr>
+            <td>
+                ResponsedUserFullName
+            </td>
+            <td>
+                @Model.ResponsedUserFullName
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Status
+            </td>
+            <td>
+                @Model.Status
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                @{
+                    string btnClass = string.Empty;
+                    string btnValue = string.Empty;
+                    btnClass += "btn ";
+                    btnValue = "Assign To Me";
+
+                    if (Model.ResponsedUserId.HasValue)
+                    {
+                        btnClass += "btn-secondary ";
+                        if (Model.AssignedToMe)
+                        {
+                            btnValue = "Complete this Ticket";
+                        }
+                        else
+                        {
+                            btnClass += "disabled ";
+                            btnValue = "Already assigned to another user";
+                        }
+                    }
+                    else
+                    {
+                        btnClass += "btn-success ";
+                    }
+                }
+                <a class="@btnClass" href="~/Home/Assign/@Model.Id">@btnValue</a>
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -11,3 +11,4 @@ P:\Projects\CallCenter\CallCenter.Presentation.Tests\obj\Debug\CallCenter.Presen
 P:\Projects\CallCenter\CallCenter.Presentation.Tests\obj\Debug\CallCenter.Presentation.Tests.csproj.CopyComplete
 P:\Projects\CallCenter\CallCenter.Presentation.Tests\obj\Debug\CallCenter.Presentation.Tests.dll
 P:\Projects\CallCenter\CallCenter.Presentation.Tests\obj\Debug\CallCenter.Presentation.Tests.pdb
+P:\Projects\CallCenter\CallCenter.Presentation.Tests\obj\Debug\CallCenter.Presentation.Tests.csprojAssemblyReference.cache

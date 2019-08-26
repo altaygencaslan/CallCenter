@@ -1,6 +1,7 @@
 ﻿using CallCenter.Helper.GeneralEnumTypes;
 using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CallCenter.Data
 {
@@ -22,11 +23,12 @@ namespace CallCenter.Data
 
         [Required]
         public int TicketOwnerId { get; set; }
+        public virtual Employee TicketOwner { get; set; }
 
-        [Required]
-        public int ResponsedUserId { get; set; }
+        public int? ResponsedUserId { get; set; }
         public virtual Employee ResponsedUser { get; set; }
 
+        [Required]
         public int Bonus { get; set; }
     }
 }

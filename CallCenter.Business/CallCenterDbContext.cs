@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,9 +21,19 @@ namespace CallCenter.Business
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            //TODO: ALTAY tabloları çoğul yapmayı engelle
+            modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
+            modelBuilder.Conventions.Remove<ManyToManyCascadeDeleteConvention>();
 
-            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Employee>()
+                        .HasOptional(h => h.TicketList);
+
+
+            modelBuilder.Entity<Ticket>()
+                        .HasOptional(h => h.ResponsedUser)
+                        .WithMany(w => w.TicketList);
+
+
+            //base.OnModelCreating(modelBuilder);
         }
     }
 }

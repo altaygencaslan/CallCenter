@@ -1,0 +1,81 @@
+﻿@model IEnumerable<CallCenter.Business.DTO.TicketDto>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td>
+                TicketOwnerFullName
+            </td>
+            <td>
+                Description
+            </td>
+            <td>
+                Bonus
+            </td>
+            <td>
+                CreateDate
+            </td>
+            <td>
+                ResponsedUserFullName
+            </td>
+            <td>
+                Status
+            </td>
+            <td>
+
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (CallCenter.Business.DTO.TicketDto ticket in Model)
+        {
+            <tr>
+                <td>
+                    @ticket.TicketOwnerFullName
+                </td>
+                <td>
+                    @ticket.Description
+                </td>
+                <td>
+                    @ticket.Bonus
+                </td>
+                <td>
+                    @ticket.CreateDate
+                </td>
+                <td>
+                    @ticket.ResponsedUserFullName
+                </td>
+                <td>
+                    @{
+                        string statusCode = string.Empty;
+                        switch (@ticket.Status)
+                        {
+                            case CallCenter.Helper.GeneralEnumTypes.TicketStatus.OPEN:
+                                statusCode = "badge badge-warning";
+                                break;
+                            case CallCenter.Helper.GeneralEnumTypes.TicketStatus.CLOSE:
+                                statusCode = "badge badge-success";
+                                break;
+                            case CallCenter.Helper.GeneralEnumTypes.TicketStatus.ASSIGNED:
+                                statusCode = "badge badge-info";
+                                break;
+                            default:
+                                break;
+
+                        }
+                    }
+                    <span class="@statusCode">@ticket.Status</span>
+                </td>
+                <td>
+                    <a class="btn btn-info" href="~/Home/Detail/@ticket.Id">Detail</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+

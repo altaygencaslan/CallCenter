@@ -1,4 +1,5 @@
-﻿using CallCenter.Data;
+﻿using CallCenter.Business.DTO;
+using CallCenter.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,12 +10,18 @@ namespace CallCenter.Business.Repositories
 {
     public interface IEmployeeRepository
     {
-        Employee Read(int id);
+        bool Create(EmployeeDto employee);
 
-        bool Update(Employee employee);
+        EmployeeDto Read(int id);
+
+        EmployeeDto Read(string email);
+
+        bool Update(EmployeeDto employee);
 
         bool BonusUpdate(int employeeid, int bonus);
 
-        bool BonusUpdate(Employee employee, int bonus);
+        bool BonusUpdate(EmployeeDto employee, int bonus);
+
+        EmployeeDto Read(string userName, string password);
     }
 }

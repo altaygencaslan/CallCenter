@@ -40,23 +40,36 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.3\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="Unity.Abstractions, Version=5.11.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.Abstractions.5.11.1\lib\net46\Unity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Container, Version=5.11.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.Container.5.11.1\lib\net46\Unity.Container.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Interception, Version=5.11.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.Interception.5.11.1\lib\net46\Unity.Interception.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CallCenterDbContext.cs" />
+    <Compile Include="DTO\EmployeeDto.cs" />
     <Compile Include="DTO\TicketDto.cs" />
-    <Compile Include="Migrations\201908241318519_mig1.cs" />
-    <Compile Include="Migrations\201908241318519_mig1.Designer.cs">
-      <DependentUpon>201908241318519_mig1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201908241335005_mig2.cs" />
-    <Compile Include="Migrations\201908241335005_mig2.Designer.cs">
-      <DependentUpon>201908241335005_mig2.cs</DependentUpon>
+    <Compile Include="Migrations\201908260222183_mig1.cs" />
+    <Compile Include="Migrations\201908260222183_mig1.Designer.cs">
+      <DependentUpon>201908260222183_mig1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -79,15 +92,15 @@
       <Project>{48bbb98e-5cf7-46d5-ae3b-222e65c624ac}</Project>
       <Name>CallCenter.Helper</Name>
     </ProjectReference>
+    <ProjectReference Include="..\CallCenter.Logging\CallCenter.Logging.csproj">
+      <Project>{e4172ed4-2803-4119-8080-d7b22f6f521a}</Project>
+      <Name>CallCenter.Logging</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201908241318519_mig1.resx">
-      <DependentUpon>201908241318519_mig1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201908241335005_mig2.resx">
-      <DependentUpon>201908241335005_mig2.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201908260222183_mig1.resx">
+      <DependentUpon>201908260222183_mig1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

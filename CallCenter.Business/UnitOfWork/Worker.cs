@@ -1,14 +1,39 @@
 ﻿using CallCenter.Business.Repositories;
+using CallCenter.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Unity;
+using Unity.Interception;
+using Unity.Interception.ContainerIntegration;
+using Unity.Interception.Interceptors.InstanceInterceptors.InterfaceInterception;
 
 namespace CallCenter.Business.UnitOfWork
 {
     public class Worker
     {
+        private static UnityContainer _container;
+        public static UnityContainer Container
+        {
+            get
+            {
+                if (_container == null)
+                {
+                    _container = new UnityContainer();
+                    _container.AddNewExtension<Interception>();
+
+                    _container.RegisterType<IEmployeeRepository, EmployeeRepository>(new Interceptor<InterfaceInterceptor>(),
+                                                                            new InterceptionBehavior<LoggingAspect>());
+                    _container.RegisterType<ITicketRepository, TicketRepository>(new Interceptor<InterfaceInterceptor>(),
+                                                                                new InterceptionBehavior<LoggingAspect>());
+                }
+
+                return _container;
+            }
+        }
+
         private static CallCenterDbContext _connection;
         public static CallCenterDbContext Connection
         {
@@ -21,27 +46,19 @@ namespace CallCenter.Business.UnitOfWork
             }
         }
 
-        private static TicketRepository _ticketRepository;
-        public static TicketRepository TicketRepository
+        public static ITicketRepository TicketRepository
         {
             get
             {
-                if (_ticketRepository == null)
-                    _ticketRepository = new TicketRepository();
-
-                return _ticketRepository;
+                return Container.Resolve<ITicketRepository>();
             }
         }
-
-        private static EmployeeRepository _employeeRepository;
-        public static EmployeeRepository EmployeeRepository
+        
+        public static IEmployeeRepository EmployeeRepository
         {
             get
             {
-                if (_employeeRepository == null)
-                    _employeeRepository = new EmployeeRepository();
-
-                return _employeeRepository;
+                return Container.Resolve<IEmployeeRepository>();
             }
         }
 
