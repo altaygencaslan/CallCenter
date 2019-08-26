@@ -1,0 +1,34 @@
+Amaç:
+Çalışanların benzer işler yaptığı bir iş yerinde (mesela çağrı merkezi), 
+yapılacak işlerin bir web arayüzünde listelendiği, 
+her birinin detaylarının görüntülenebildiği, 
+"üzerine al" seçeneği ile, bir işle ilgili çalışmaya başlanabildiği ve 
+"çalışmayı tamamla" seçeneği ile çalışmanın tamamlandığı, 
+2-3 ekranlık bir web arayüzü yapmak istiyoruz.
+
+İş Gereksinimleri:
+-Basit, fonksiyonel arayüz olması yeterli, tasarım beklentisi yok.
+-Login Ekranı
+    Her kullanıcının kendi username - password'ü ile login olabilmesi bekleniyor.
+	Kayıt olma ekranına gerek bulunmamaktadır.
+	Şifremi unuttum, şifre hatırlatma işlemlerine gerek bulunmamaktadır.
+	Şifrelerin DB'de şifreli tutulması beklenmektedir.
+-Görev (İş) listesi Ekranı
+	İşler açıklama, yaratılma tarihi, durum, kimin üzerinde olduğu bilgisi ile listelenmeli.
+	***** Sayfalama olmalı 
+	İşe tıklandığında detay ekranına gidilebilmeli.
+-İş detay Ekranı
+	"Üzerime al" butonu ile üzerine alma işlemi yapılabilmeli.
+	Üzerinde olan bir iş için "İşi tamamla" butonu aktif olmalı ve işin tamamlanması sağlanmalı. İş tamamlanması ile birlikte çalışan da 3 puan kazanmalı.
+	İşi talep eden müşterinin adı - soyadı gösterilmeli. Müşterinin adı - soyadı bilgisi CRM sisteminden çekilmeli (detayı aşağıdadır)
+Teknik gereksinimler:
+	Uygulama .Net ile yazılmalıdır.
+	**** Sistem farklı DB altyapılarıyla çalışabilir olmalıdır.
+	**** İşi talep eden müşterinin sadece ID'si bizim DB'de tutulmalı, müşterinin adı-soyadı CRM sisteminden REST api ile çekiliyor gibi simule edilmelidir.
+	İşi bitirmek ve puan kazanmak işlemleri atomik (transactional) olmalı, ya ikisi de yapılmalı, ya da ikisi de yapılmamalıdır.
+	**** Aynı anda iki kişinin "Üzerime al" butonuna basma ihtimalini (race condition) düşünüp uygun önlem alınmalı. Önce hangi kullanıcının isteği işlenirse o kullanıcı işi üzerine alabilmeli, diğer kullanıcı uygun bir hata mesajı almalı.
+	**** Bir REST API yazılmalı, önyüz tamamen bu REST API ile haberleşerek çalışmalı. REST API'nin kullanımında güvenlik kriterleri gözönünde bulundurulmalı.
+	Önyüz için bir JS framework'ü kullanılması iyi olur. (Angular, React vs). JS Framework kullanılmayacaksa, önyüz MVC ile yazılabilir, bu durumda MVC projesi, REST API ile iletişim kurmalı, direk DB katmanına gitmemeli.
+	**** REST API'ye gelen istekler ve dönülen cevaplar log'lanmalı. (Bir log'lama framework'ü kullanılmalı)
+	**** Exception handling yapılmalıdır.
+	**** Unit test coverage'ının yüksek olması önemlidir.
