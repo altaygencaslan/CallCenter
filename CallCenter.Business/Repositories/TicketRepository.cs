@@ -11,8 +11,8 @@ namespace CallCenter.Business.Repositories
     {
         public bool AssignToMe(TicketDto ticket)
         {
-            Ticket updatingTicket = Worker.Connection.Ticket.Find(ticket.Id);
-            if (updatingTicket != null)
+            Ticket updatingTicket = Worker.Connection.Ticket.Where(w => w.Id == ticket.Id && !w.ResponsedUserId.HasValue).FirstOrDefault();
+            if (updatingTicket != null && updatingTicket.Id > 0)
             {
                 updatingTicket.Status = Helper.GeneralEnumTypes.TicketStatus.ASSIGNED;
                 updatingTicket.ResponsedUserId = ticket.ResponsedUserId;
