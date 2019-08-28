@@ -32,3 +32,5 @@ Teknik gereksinimler:
 	REST API'ye gelen istekler ve dönülen cevaplar log'lanmalı. (Bir log'lama framework'ü kullanılmalı)
 	Exception handling yapılmalıdır.
 	**** Unit test coverage'ının yüksek olması önemlidir. (bu madde üzerine düşündüm ve basit birkaç uygulama için örnek yaptım ancak daha önce hiç yazmadığım için çok zamanımı alacak düşüncesiyle atlamak zorunda kaldım)
+
+	NOT: Projenin hızlı ilerlemesi amacıyla Customer ve Employee kişileri aynı tablodan alınmıştır.
