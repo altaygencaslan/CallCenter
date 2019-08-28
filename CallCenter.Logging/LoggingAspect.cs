@@ -25,6 +25,8 @@ namespace CallCenter.Logging
 
         public IMethodReturn Invoke(IMethodInvocation input, GetNextInterceptionBehaviorDelegate getNext)
         {
+            //İsteğe bağlı loglama işlemleri:
+
             Console.WriteLine("{0} metodu {1} tarihinde çalıştırıldı.", input.MethodBase.Name, DateTime.Now);
             var result = getNext()(input, getNext);
 
