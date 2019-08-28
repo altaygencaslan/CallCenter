@@ -80,7 +80,7 @@ namespace CallCenter.Business.Repositories
                              ResponsedUserId = s.ResponsedUserId,
                              ResponsedUserFullName = s.ResponsedUser.Name + " " + s.ResponsedUser.LastName,
                              Status = s.Status,
-                             TicketOwnerId = s.TicketOwnerId
+                             TicketOwnerId = s.TicketOwnerId,
                          })
                          .ToList();
         }

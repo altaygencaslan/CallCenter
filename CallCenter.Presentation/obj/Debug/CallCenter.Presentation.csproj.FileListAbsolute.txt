@@ -91,3 +91,5 @@ P:\Projects\CallCenter\CallCenter.Presentation\bin\System.Runtime.CompilerServic
 P:\Projects\CallCenter\CallCenter.Presentation\bin\System.Threading.Tasks.Extensions.xml
 P:\Projects\CallCenter\CallCenter.Presentation\bin\EntityFramework.SqlServer.dll
 P:\Projects\CallCenter\CallCenter.Presentation\bin\EntityFramework.SqlServer.xml
+P:\Projects\CallCenter\CallCenter.Presentation\bin\Newtonsoft.Json.dll
+P:\Projects\CallCenter\CallCenter.Presentation\bin\Newtonsoft.Json.xml

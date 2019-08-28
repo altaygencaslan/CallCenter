@@ -1,7 +1,9 @@
-﻿using System;
+﻿using CallCenter.RestService.Logging;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using System.Web.Http.ExceptionHandling;
 
 namespace CallCenter.RestService
 {
@@ -13,6 +15,9 @@ namespace CallCenter.RestService
 
             // Web API routes
             config.MapHttpAttributeRoutes();
+
+            config.MessageHandlers.Add(new Logger());
+            config.Services.Replace(typeof(IExceptionLogger), new Logging.ExceptionHandler());
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",

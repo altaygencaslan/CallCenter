@@ -12,6 +12,8 @@ namespace CallCenter.Business.Repositories
     {
         bool Create(EmployeeDto employee);
 
+        IEnumerable<EmployeeDto> Read();
+
         EmployeeDto Read(int id);
 
         EmployeeDto Read(string email);

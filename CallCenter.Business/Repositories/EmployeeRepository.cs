@@ -104,6 +104,7 @@ namespace CallCenter.Business.Repositories
                     Id = employee.Id,
                     Name = employee.Name,
                     LastName = employee.LastName,
+                    Password = employee.Password,
                     Email = employee.Email,
                     Bonus = employee.Bonus
                 };
@@ -112,6 +113,18 @@ namespace CallCenter.Business.Repositories
             }
 
             return null;
+        }
+
+        public IEnumerable<EmployeeDto> Read()
+        {
+            return Worker.Connection.Employee.Select(s => new EmployeeDto
+            {
+                Id = s.Id,
+                Name = s.Name,
+                LastName = s.LastName,
+                Email = s.Email,
+                Bonus = s.Bonus
+            }).ToList();
         }
 
         public bool Update(EmployeeDto employee)

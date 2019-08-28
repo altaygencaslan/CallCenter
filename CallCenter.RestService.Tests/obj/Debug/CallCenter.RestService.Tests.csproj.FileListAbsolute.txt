@@ -11,3 +11,4 @@ P:\Projects\CallCenter\CallCenter.RestService.Tests\obj\Debug\CallCenter.RestSer
 P:\Projects\CallCenter\CallCenter.RestService.Tests\obj\Debug\CallCenter.RestService.Tests.csproj.CopyComplete
 P:\Projects\CallCenter\CallCenter.RestService.Tests\obj\Debug\CallCenter.RestService.Tests.dll
 P:\Projects\CallCenter\CallCenter.RestService.Tests\obj\Debug\CallCenter.RestService.Tests.pdb
+P:\Projects\CallCenter\CallCenter.RestService.Tests\obj\Debug\CallCenter.RestService.Tests.csprojAssemblyReference.cache

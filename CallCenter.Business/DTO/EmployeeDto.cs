@@ -26,8 +26,11 @@ namespace CallCenter.Business.DTO
 
             set
             {
-                var plainTextBytes = Encoding.UTF8.GetBytes(value);
-                _password = Convert.ToBase64String(plainTextBytes);
+                if (!string.IsNullOrEmpty(value))
+                {
+                    var plainTextBytes = Encoding.UTF8.GetBytes(value);
+                    _password = Convert.ToBase64String(plainTextBytes);
+                }
             }
         }
 

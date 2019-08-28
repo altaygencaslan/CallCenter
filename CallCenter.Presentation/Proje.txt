@@ -15,7 +15,7 @@ her birinin detaylarının görüntülenebildiği,
 	Şifrelerin DB'de şifreli tutulması beklenmektedir.
 -Görev (İş) listesi Ekranı
 	İşler açıklama, yaratılma tarihi, durum, kimin üzerinde olduğu bilgisi ile listelenmeli.
-	***** Sayfalama olmalı 
+	***** Sayfalama olmalı (bu işlem için kendimiz bir kod parçası hazırayabilir yada jquery'nin datatable'ını veya js tabanlı bir pagination toolu veya microsoft'un pagination kullanabiliriz.)
 	İşe tıklandığında detay ekranına gidilebilmeli.
 -İş detay Ekranı
 	"Üzerime al" butonu ile üzerine alma işlemi yapılabilmeli.
@@ -23,12 +23,12 @@ her birinin detaylarının görüntülenebildiği,
 	İşi talep eden müşterinin adı - soyadı gösterilmeli. Müşterinin adı - soyadı bilgisi CRM sisteminden çekilmeli (detayı aşağıdadır)
 Teknik gereksinimler:
 	Uygulama .Net ile yazılmalıdır.
-	**** Sistem farklı DB altyapılarıyla çalışabilir olmalıdır.
-	**** İşi talep eden müşterinin sadece ID'si bizim DB'de tutulmalı, müşterinin adı-soyadı CRM sisteminden REST api ile çekiliyor gibi simule edilmelidir.
+	**** Sistem farklı DB altyapılarıyla çalışabilir olmalıdır. (ne yazık ki yetişmedi)
+	İşi talep eden müşterinin sadece ID'si bizim DB'de tutulmalı, müşterinin adı-soyadı CRM sisteminden REST api ile çekiliyor gibi simule edilmelidir.
 	İşi bitirmek ve puan kazanmak işlemleri atomik (transactional) olmalı, ya ikisi de yapılmalı, ya da ikisi de yapılmamalıdır.
-	**** Aynı anda iki kişinin "Üzerime al" butonuna basma ihtimalini (race condition) düşünüp uygun önlem alınmalı. Önce hangi kullanıcının isteği işlenirse o kullanıcı işi üzerine alabilmeli, diğer kullanıcı uygun bir hata mesajı almalı.
-	**** Bir REST API yazılmalı, önyüz tamamen bu REST API ile haberleşerek çalışmalı. REST API'nin kullanımında güvenlik kriterleri gözönünde bulundurulmalı.
-	Önyüz için bir JS framework'ü kullanılması iyi olur. (Angular, React vs). JS Framework kullanılmayacaksa, önyüz MVC ile yazılabilir, bu durumda MVC projesi, REST API ile iletişim kurmalı, direk DB katmanına gitmemeli.
-	**** REST API'ye gelen istekler ve dönülen cevaplar log'lanmalı. (Bir log'lama framework'ü kullanılmalı)
-	**** Exception handling yapılmalıdır.
-	**** Unit test coverage'ının yüksek olması önemlidir.
+	**** Aynı anda iki kişinin "Üzerime al" butonuna basma ihtimalini (race condition) düşünüp uygun önlem alınmalı. Önce hangi kullanıcının isteği işlenirse o kullanıcı işi üzerine alabilmeli, diğer kullanıcı uygun bir hata mesajı almalı. (bu konuda bilgim yok ancak vaktim olsa bunu da halledebilirim sanıyorum)
+	Bir REST API yazılmalı, önyüz tamamen bu REST API ile haberleşerek çalışmalı. REST API'nin kullanımında güvenlik kriterleri gözönünde bulundurulmalı.
+	(?) Önyüz için bir JS framework'ü kullanılması iyi olur. (Angular, React vs). JS Framework kullanılmayacaksa, önyüz MVC ile yazılabilir, bu durumda MVC projesi, REST API ile iletişim kurmalı, direk DB katmanına gitmemeli. (Bu noktada frameworkü kavrayıp uygulamak ne kadar sürer bilemediğim için MVC üzerinden geliştirdim. REST'e gidiş son derece acemice görünse de en hızlı çözümü yaptım. Şu an aklıma gelen bir çözüm olarak servis tarafında Array int id alıp liste olarak döndüren bir metod işlemi tekrarlamaktan kurtarırdı.)
+	REST API'ye gelen istekler ve dönülen cevaplar log'lanmalı. (Bir log'lama framework'ü kullanılmalı)
+	Exception handling yapılmalıdır.
+	**** Unit test coverage'ının yüksek olması önemlidir. (bu madde üzerine düşündüm ve basit birkaç uygulama için örnek yaptım ancak daha önce hiç yazmadığım için çok zamanımı alacak düşüncesiyle atlamak zorunda kaldım)

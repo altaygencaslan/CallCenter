@@ -3,4 +3,3 @@ P:\Projects\CallCenter\CallCenter.Helper\bin\Debug\CallCenter.Helper.pdb
 P:\Projects\CallCenter\CallCenter.Helper\obj\Debug\CallCenter.Helper.csproj.CoreCompileInputs.cache
 P:\Projects\CallCenter\CallCenter.Helper\obj\Debug\CallCenter.Helper.dll
 P:\Projects\CallCenter\CallCenter.Helper\obj\Debug\CallCenter.Helper.pdb
-P:\Projects\CallCenter\CallCenter.Helper\obj\Debug\CallCenter.Helper.csprojAssemblyReference.cache
